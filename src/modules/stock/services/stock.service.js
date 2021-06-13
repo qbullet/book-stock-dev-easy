@@ -1,5 +1,5 @@
-const StockDocument = require("../models/stock.schema")
-const statusEnum = require("../../../common/status.enum")
+const StockDocument = require('../models/stock.schema')
+const statusEnum = require('../../../common/status.enum')
 
 const stockService = {
   getAll () {

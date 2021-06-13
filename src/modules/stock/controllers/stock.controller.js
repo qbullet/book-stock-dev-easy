@@ -1,7 +1,7 @@
-const stockService = require("../services/stock.service")
-const utilFunction = require("../../../functions/utils")
-const humps = require("humps")
-require("dotenv").config();
+const stockService = require('../services/stock.service')
+const utilFunction = require('../../../functions/utils')
+const humps = require('humps')
+require('dotenv').config()
 
 const stockController = {
   async getStocks (req, res) {
@@ -13,8 +13,8 @@ const stockController = {
         data: allStocks
       })
     } catch (err) {
-      console.error(`[GOT AN ERROR]: ${err.message}`);
-      res.send(`[GOT AN ERROR]: ${err.message}`).status(500);
+      console.error(`[GOT AN ERROR]: ${err.message}`)
+      res.send(`[GOT AN ERROR]: ${err.message}`).status(500)
     }
   },
 
@@ -29,8 +29,8 @@ const stockController = {
         data: stock
       })
     } catch (err) {
-      console.error(`[GOT AN ERROR]: ${err.message}`);
-      res.send(`[GOT AN ERROR]: ${err.message}`).status(500);
+      console.error(`[GOT AN ERROR]: ${err.message}`)
+      res.send(`[GOT AN ERROR]: ${err.message}`).status(500)
     }
   },
 
@@ -45,8 +45,8 @@ const stockController = {
         data: created
       })
     } catch (err) {
-      console.error(`[GOT AN ERROR]: ${err.message}`);
-      res.send(`[GOT AN ERROR]: ${err.message}`).status(500);
+      console.error(`[GOT AN ERROR]: ${err.message}`)
+      res.send(`[GOT AN ERROR]: ${err.message}`).status(500)
     }
   },
 
@@ -63,8 +63,8 @@ const stockController = {
         data: edited
       })
     } catch (err) {
-      console.error(`[GOT AN ERROR]: ${err.message}`);
-      res.send(`[GOT AN ERROR]: ${err.message}`).status(500);
+      console.error(`[GOT AN ERROR]: ${err.message}`)
+      res.send(`[GOT AN ERROR]: ${err.message}`).status(500)
     }
   },
 
@@ -79,10 +79,10 @@ const stockController = {
         data: deleted
       })
     } catch (err) {
-      console.error(`[GOT AN ERROR]: ${err.message}`);
-      res.send(`[GOT AN ERROR]: ${err.message}`).status(500);
+      console.error(`[GOT AN ERROR]: ${err.message}`)
+      res.send(`[GOT AN ERROR]: ${err.message}`).status(500)
     }
   }
-};
+}
 
-module.exports = stockController;
+module.exports = stockController
